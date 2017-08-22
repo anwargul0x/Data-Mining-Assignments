@@ -16,7 +16,7 @@ var i=0,k=0;
 		count[i] = 1;
 		k = i+1;
 			for(var j = k ; j < p_length ; j++){
-			if(p_array[i] === p_array[j] || p_array[j] === " "){
+			if(p_array[i] === p_array[j]){
 			 p_array.splice(j,1);
 				count[i]+=1;
 				j-=1
