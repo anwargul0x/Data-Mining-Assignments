@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Words Frequency Checker</title>
+    <style type="text/css">
+    	#tab-view,#paragraph{
+   		width:70%;text-transform: capitalize;
+    	}#tab-view{
+   		text-align: center;
+   		border:1px solid #aaa;border-radius: 0.2em;
+   		padding: 0.5em 1em 2em 1em;margin: 1% auto;
+    	}tr{position: relative;left:-1.2em;}td{
+    	text-align: left;position: relative;left:20.3%;
+    	}#paragraph{
+    	height: 1.8em;border:1px solid #aaa;border-radius: 0.2em;font-size: 20px;
+    	padding: 0.5em;display: block;margin: 0px auto;margin-top: 0.5em;
+    	}#p_btn{
+    	text-transform: uppercase;border:none;border-radius: 0.3em;font-size: 18px;
+    	width: 12%;height:3em;color: #fff;display: block;margin: 2% auto;background-color: #00ccaa;
+    	}#p_btn:active{
+    	background-color: #00cb94;border: 1px inset #00cb98;
+    	}#errMsg{
+    	text-transform: capitalize;color: #cb0000;
+    	text-align: center;font-family: "Roboto Slab";
+    	}
+    </style>
+</head>
+<body>
+<input type="text" name="paragraph" id="paragraph" placeholder="Enter the Paragraph Here"> <button id="p_btn" onclick="check()">Check</button>
+<table id="tab-view">
+  	<tr><th colspan="2"><h3>Words Frequency Checker</h3></th></tr>
+  	<tr><th><h4>Words</h4></th><th><h4>Frequency</h4></th></tr>
+  </table> 
+  <div id="errorMsg"></div>
+</body>
+    <script src="rev1.js"></script>
+</html>
